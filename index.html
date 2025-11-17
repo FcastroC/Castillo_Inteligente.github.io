@@ -7,12 +7,12 @@
     <!-- Carga de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Carga de Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Pirata+One&display=swap" rel="stylesheet">
     <style>
         /* Estilos personalizados */
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #a1daee;
+            font-family: "Pirata One", system-ui; /* Fuente principal */
+            background-color: #e3cfaa !important; /* Color de fondo */
         }
         /* Estilos para las zonas interactivas del SVG */
         .room {
@@ -136,36 +136,36 @@
 
     <div class="container mx-auto p-4 text-center max-w-4xl">
         <header class="my-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-blue-600">Tu Castillo Inteligente</h1>
-            <p class="text-lg text-gray-600 mt-2">Aprende a proteger tus dispositivos conectados. ¡Haz clic en una zona del castillo para empezar!</p>
+            <h1 class="text-6xl md:text-6xl font-bold text-blue-600">Tu Castillo Inteligente</h1>
+            <p class="text-2xl text-gray-600 mt-2">Aprende a proteger tus dispositivos conectados. ¡Haz clic en una zona del castillo para empezar!</p>
         </header>
 
         <!-- Contenedor de la Casa Interactiva (SVG) -->
         <div class="castle-container w-full max-w-2xl mx-auto shadow-xl rounded-lg">
-            <img src="imagen.jpg" 
+            <img src="Imagen.png" 
                  alt="Ilustración de un castillo inteligente con zonas de seguridad" 
                  class="w-full h-auto rounded-lg block">
 
             <!-- Zonas Interactivas (Divs superpuestos) -->
             
             <!-- Zona 1: Niños (Torre Izquierda) -->
-            <div id="kids-room" class="room" style="top: 42%; left: 19%; width: 10%; height: 10%;"></div>
+            <div id="kids-room" class="room" style="top: 37%; left: 12%; width: 10%; height: 8%;"></div>
         
             <!-- Zona 2: Cámaras (Torre Derecha) -->
-            <div id="security-room" class="room" style="top: 42%; right: 18%; width: 10%; height: 10%;"></div>
+            <div id="security-room" class="room" style="top: 37%; right: 10%; width: 10%; height: 8%;"></div>
         
             <!-- Zona 3: Sala (Centro Izquierda) -->
-            <div id="living-room" class="room" style="top: 51%; left: 33%; width: 11%; height: 9%;"></div>
+            <div id="living-room" class="room" style="top: 45%; left: 29%; width: 14%; height: 7%;"></div>
 
             <!-- Zona 4: Cocina (Centro Derecha) -->
-            <div id="kitchen-room" class="room" style="top: 51%; right: 32%; width: 11%; height: 9%;"></div>
+            <div id="kitchen-room" class="room" style="top: 45%; right: 26%; width: 14%; height: 7%;"></div>
         
             <!-- Zona 5: Wi-Fi (Puerta) -->
-            <div id="wifi-room" class="room" style="bottom: 21%; left: 46%; width: 10%; height: 10%;"></div>
+            <div id="wifi-room" class="room" style="bottom: 31%; left: 46%; width: 12%; height: 9%;"></div>
 
         </div>
         
-        <footer class="mt-8 text-gray-500">
+        <footer class="text-3xl mt-6 text-gray-500">
             <p>Una guía visual creada para proteger a toda la familia en el mundo digital.</p>
         </footer>
     </div>
@@ -177,8 +177,8 @@
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <div class="flex items-center mb-4">
-                <div id="modal-icon" class="text-4xl mr-4"></div>
-                <h2 id="modal-title" class="text-3xl font-bold text-blue-600"></h2>
+                <div id="modal-icon" class="text-5xl mr-4"></div>
+                <h2 id="modal-title" class="text-4xl font-bold text-blue-600"></h2>
             </div>
             
             <!-- Pestañas por Audiencia -->
@@ -207,7 +207,7 @@
                 content: {
                     adultos: `
                         <p class="mb-4">Tu red Wi-Fi es la puerta principal de tu hogar digital. Si la dejas abierta o con una cerradura barata, cualquiera puede entrar a todas las habitaciones. Asegúrala correctamente.</p>
-                        <p class="mb-4">Descarga la Checklist rápida.<a href="WiFiCastillo.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="WiFi.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
 
                         <div class="tip tip-green">
                             <span class="tip-icon">🔑</span>
@@ -224,7 +224,7 @@
                     `,
                     adolescentes: `
                         <p class="mb-4">Piensa en la clave del Wi-Fi como la contraseña de tu cuenta de streaming. ¡No querras que cualquiera éntre!</p>
-                        <p class="mb-4">Descarga la Checklist rápida.<a href="WiFiCastillo.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="WiFi.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
 
                         <div class="tip tip-green">
                             <span class="tip-icon">🎮</span>
@@ -242,7 +242,7 @@
                     `,
                     ninos: `
                         <p class="mb-4">¡La clave del Wi-Fi es como el conjuro mágico que protege nuestra casa!</p>
-                        <p class="mb-4">Descarga la Checklist rápida.<a href="WiFiCastillo.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="WiFi.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
 
                         <div class="tip tip-green">
                             <span class="tip-icon">✨</span>
@@ -267,8 +267,8 @@
                     `,
                     mayores: `
                         <p class="mb-4">La contraseña del Wi-Fi es la llave de su casa. Es importante guardarla bien.</p>
-                        <p class="mb-4">Descarga la Checklist rápida.<a href="WiFiCastillo.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
-                        
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="WiFi.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
+
                          <div class="tip tip-green">
                             <span class="tip-icon">📝</span>
                             <div><strong>Anóta la contraseña</strong>en un lugar seguro del castillo (papel físico) .</div>
@@ -298,6 +298,8 @@
                 content: {
                     adultos: `
                         <p class="mb-4">Los televisores y altavoces pueden escuchar y ver. Gestiona sus permisos.</p>
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="SalaEstar.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
+
                         <div class="tip tip-yellow">
                             <span class="tip-icon">🎤</span>
                             <div><strong>Revisa el micrófono:</strong> Muchos dispositivos tienen un botón físico para apagar el micrófono. Úsalo cuando no necesites el asistente de voz.</div>
@@ -313,6 +315,8 @@
                     `,
                     adolescentes: `
                         <p class="mb-4">¿Sabías que tu altavoz puede grabar conversaciones? ¡Controla quién te escucha!</p>
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="SalaEstar.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
+
                         <div class="tip tip-yellow">
                             <span class="tip-icon">🤫</span>
                             <div>Apaga el micro del altavoz cuando tengas amigos en casa. La privacidad es cool.</div>
@@ -324,6 +328,8 @@
                     `,
                     ninos: `
                         <p class="mb-4">El altavoz es como un lorito que a veces repite lo que oye. ¡Vamos a enseñarle a estar en silencio!</p>
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="SalaEstar.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
+
                         <div class="tip tip-yellow">
                             <span class="tip-icon">🔇</span>
                             <div>Busca el botoncito con un micrófono dibujado. ¡Púlsalo para que el "lorito" descanse y no escuche tus secretos!</div>
@@ -331,6 +337,8 @@
                     `,
                     mayores: `
                          <p class="mb-4">Estos aparatos son muy útiles, pero es bueno saber cómo funcionan.</p>
+                         <p class="mb-4">Descarga la Checklist rápida.<a href="SalaEstar.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
+
                         <div class="tip tip-green">
                             <span class="tip-icon">🗣️</span>
                             <div><strong>Pida ayuda para configurar:</strong> Pida a un familiar que le ayude a revisar la configuración inicial para que el dispositivo solo haga lo que usted necesita.</div>
@@ -348,6 +356,8 @@
                 content: {
                     adultos: `
                         <p class="mb-4">Incluso tu refrigerador o cafetera pueden conectarse a internet. La regla principal es la simplicidad.</p>
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="Cocina.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p> 
+
                         <div class="tip tip-green">
                             <span class="tip-icon">🔌</span>
                             <div><strong>Si no usas la función "smart", no la conectes:</strong> Si no necesitas que tu microondas se conecte al Wi-Fi, simplemente no lo configures en la red.</div>
@@ -357,9 +367,15 @@
                             <div><strong>Cambia la contraseña por defecto:</strong> Si conectas un electrodoméstico, asegúrate de cambiar la contraseña que viene de fábrica.</div>
                         </div>
                     `,
-                    adolescentes:`<p class="text-center text-gray-600 py-8">Los electrodomésticos de la cocina no suelen ser un gran riesgo para ti, ¡pero los principios de contraseñas seguras se aplican a todo!</p>`,
-                    ninos: `<p class="text-center text-gray-600 py-8">¡Los aparatos de la cocina son para cocinar, no para jugar en internet! Déjaselos a los adultos. 😉</p>`,
-                    mayores: `<p class="text-center text-gray-600 py-8">La mayoría de las funciones "inteligentes" de estos aparatos no son necesarias. Es más seguro usarlos de la forma tradicional.</p>`,
+                    adolescentes:`
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="Cocina.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>
+                        <p class="text-center text-gray-600 py-8">Los electrodomésticos de la cocina no suelen ser un gran riesgo para ti, ¡pero los principios de contraseñas seguras se aplican a todo!</p>`,
+                    ninos: `
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="Cocina.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>
+                        <p class="text-center text-gray-600 py-8">¡Los aparatos de la cocina son para cocinar, no para jugar en internet! Déjaselos a los adultos. 😉</p>`,
+                    mayores: `
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="Cocina.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>
+                        <p class="text-center text-gray-600 py-8">La mayoría de las funciones "inteligentes" de estos aparatos no son necesarias. Es más seguro usarlos de la forma tradicional.</p>`,
                 }
             },
             'kids-room': {
@@ -368,6 +384,8 @@
                 content: {
                      adultos: `
                         <p class="mb-4">Los juguetes con conexión a internet, micrófonos o cámaras pueden ser un riesgo para la privacidad de los más pequeños.</p>
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="Habitacion.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>
+
                         <div class="tip tip-yellow">
                             <span class="tip-icon">🧐</span>
                             <div><strong>Investiga antes de comprar:</strong> Busca reseñas sobre la seguridad del juguete. ¿Otros padres han reportado problemas?</div>
@@ -381,9 +399,13 @@
                             <div><strong>Apaga los juguetes por la noche:</strong> Desconéctalos de la corriente o del Wi-Fi cuando no se estén usando, especialmente en el dormitorio.</div>
                         </div>
                     `,
-                    adolescentes:`<p class="text-center text-gray-600 py-8">Si tienes hermanos pequeños, ayúdales a entender que no deben dar información personal (su nombre, colegio, etc.) a sus juguetes que hablan.</p>`,
+                    adolescentes:`
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="Habitacion.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>
+                        <p class="text-center text-gray-600 py-8">Si tienes hermanos pequeños, ayúdales a entender que no deben dar información personal (su nombre, colegio, etc.) a sus juguetes que hablan.</p>`,
                     ninos: `
                         <p class="mb-4">¡Tus juguetes son tus amigos! Pero algunos amigos no saben guardar secretos.</p>
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="Habitacion.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>
+
                         <div class="tip tip-green">
                             <span class="tip-icon">💬</span>
                             <div>Cuéntale tus aventuras, ¡pero no le digas tu nombre completo o dónde vives!</div>
@@ -395,6 +417,8 @@
                     `,
                     mayores: `
                         <p class="mb-4">Al regalar un juguete moderno a sus nietos, es bueno tener en cuenta un par de cosas.</p>
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="Habitacion.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>
+
                         <div class="tip tip-yellow">
                             <span class="tip-icon">🎁</span>
                             <div><strong>Pregunte a los padres:</strong> Antes de comprar un juguete con conexión a internet, es buena idea consultar con los padres si se sienten cómodos con él.</div>
@@ -412,6 +436,8 @@
                 content: {
                      adultos: `
                         <p class="mb-4">Las cámaras nos dan seguridad, pero si no están bien configuradas, pueden ser una ventana para extraños.</p>
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="camaras.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>
+
                         <div class="tip tip-red">
                             <span class="tip-icon">🔑</span>
                             <div><strong>OBLIGATORIO cambiar la contraseña:</strong> Las contraseñas por defecto de las cámaras de seguridad son conocidas y fáciles de encontrar en internet. ¡Es el paso más importante!</div>
@@ -425,10 +451,16 @@
                             <div><strong>Colocación estratégica:</strong> Instala las cámaras para que vigilen el exterior o los accesos, evitando apuntar a zonas privadas como dormitorios o baños.</div>
                         </div>
                     `,
-                    adolescentes:`<p class="text-center text-gray-600 py-8">La seguridad de las cámaras es cosa de adultos, pero si ves algo raro en la red o un dispositivo se comporta de forma extraña, avísales.</p>`,
-                    ninos: `<p class="text-center text-gray-600 py-8">Las cámaras son para ver quién llama a la puerta, ¡como la mirilla mágica de la casa! Son los guardianes.</p>`,
+                    adolescentes:`
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="camaras.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>
+                        <p class="text-center text-gray-600 py-8">La seguridad de las cámaras es cosa de adultos, pero si ves algo raro en la red o un dispositivo se comporta de forma extraña, avísales.</p>`,
+                    ninos: `
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="camaras.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>
+                        <p class="text-center text-gray-600 py-8">Las cámaras son para ver quién llama a la puerta, ¡como la mirilla mágica de la casa! Son los guardianes.</p>`,
                     mayores: `
                         <p class="mb-4">Las cámaras pueden darle mucha tranquilidad, pero deben ser su aliado, no un riesgo.</p>
+                        <p class="mb-4">Descarga la Checklist rápida.<a href="camaras.pdf" target="_blank"><strong>📄 Descargar PDF</strong></a></p>    
+                        
                         <div class="tip tip-red">
                             <span class="tip-icon">👨‍🔧</span>
                             <div><strong>Pida ayuda para la instalación:</strong> Es crucial que una persona de confianza le ayude a instalar la cámara y, sobre todo, a cambiar la contraseña inicial por una segura.</div>
@@ -533,8 +565,5 @@
     </script>
 </body>
 </html>
-
-
-
 
 
